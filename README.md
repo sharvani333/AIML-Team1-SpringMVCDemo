@@ -1,34 +1,102 @@
-# AIML-Team1-SpringMVCDemo
-Spring MVC Console Weather App using XML Configuration
-# 🌦️ Weather Reporting Console App (Spring XML Config)
+```
+# 🌦️ Weather Web App
 
-This is a simple Java console application built using **Spring (XML-based configuration)**. It fetches real-time weather data from the **OpenWeatherMap API** based on user-input city names.
+A simple and interactive weather web application built with **Spring Boot**, using **OpenWeatherMap API** to fetch real-time weather data and display it via a clean UI built with **HTML (Thymeleaf)**.
+
+---
 
 ## 🚀 Features
-- XML-based Spring Bean configuration
-- Fetches live weather (temperature, condition, country)
-- Gracefully handles invalid inputs
-- Console-based interaction
 
-## 🔧 Technologies Used
-- Java 17+
+- 🌍 Get real-time weather data by entering any city name.
+- 📦 Integrated OpenWeatherMap API.
+- 💻 Built using Spring Boot (v2.7.18) and Thymeleaf.
+- 🧪 Includes unit testing using JUnit.
+- 📁 Uses XML-based bean configuration (`beans.xml`).
+- 👓 Pretty UI output using HTML templates (`index.html`, `weather.html`).
+
+---
+
+## 🛠️ Technologies Used
+
+- Java 8+
+- Spring Boot
 - Maven
-- Spring Framework (XML configuration)
+- Thymeleaf (for HTML UI rendering)
 - OpenWeatherMap API
-- Jackson JSON Parser
+- JUnit (for testing)
 
-## ▶️ How to Run
+---
 
-1. Clone this repository  
-2. Open in VS Code or any IDE  
-3. Run:
-   ```bash
-   mvn clean compile exec:java
+## 🧾 Project Structure
 
-## Sample Output
+```
 
-Enter city name: Delhi  
-Weather Report for Delhi: IN, 30.7°C, overcast clouds
+weather-xml-app/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/example/weather/
+│   │   │       ├── WeatherApp.java
+│   │   │       ├── WeatherController.java
+│   │   │       ├── WeatherDataProvider.java
+│   │   │       ├── WeatherFormatter.java
+│   │   │       └── WeatherService.java
+│   │   └── resources/
+│   │       ├── templates/
+│   │       │   ├── index.html
+│   │       │   └── weather.html
+│   │       └── beans.xml
+│   └── test/
+│       └── java/com/example/weather/
+│           └── AppTest.java
+├── pom.xml
+└── README.md
 
-## 🙋‍♀️ Author
-**Sharvani Cheruku**
+````
+
+---
+
+## 🌐 API Reference
+
+- [OpenWeatherMap API](https://openweathermap.org/api)
+- Replace `your_api_key_here` in `WeatherDataProvider.java` with your actual API key.
+
+---
+
+## 🧪 Running the Application
+
+### 1. Build the JAR
+```bash
+mvn clean package
+````
+
+### 2. Run the App
+
+```bash
+java -jar target/weather-web-app-1.0.0.jar
+```
+
+### 3. Open in Browser
+
+```
+http://localhost:8080
+```
+
+## 4. Output
+
+🌤️ Weather Console App
+Type 'exit' to quit.
+
+Enter city name: city_name
+🌤️ Weather in "city_name"
+🌡️ Temperature: 32.1°C
+💧 Humidity: 53%
+🌬️ Wind Speed: 3.5 m/s
+☁️ Condition: overcast clouds
+        🔙 Back
+
+## 👩‍💻 Author
+
+Sharvani Cheruku
+
+---
