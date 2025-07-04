@@ -1,5 +1,4 @@
-```
-# 🌦️ Weather Web App
+## 🌦️ Weather Web App
 
 A simple and interactive weather web application built with **Spring Boot**, using **OpenWeatherMap API** to fetch real-time weather data and display it via a clean UI built with **HTML (Thymeleaf)**.
 
@@ -98,5 +97,3 @@ Enter city name: city_name
 ## 👩‍💻 Author
 
 Sharvani Cheruku
-
----
