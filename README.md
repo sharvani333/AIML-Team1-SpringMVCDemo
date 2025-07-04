@@ -83,7 +83,14 @@ http://localhost:8080
 
 ## 4. Output
 
-<pre> ``` Enter city name: city_name 🌤️ Weather in "city_name" 🌡️ Temperature: 32.1°C 💧 Humidity: 53% 🌬️ Wind Speed: 3.5 m/s ☁️ Condition: overcast clouds 🔙 Back ``` </pre>
+Enter city name: city_name  
+- 🌤️ Weather in "city_name"  
+- 🌡️ Temperature: 32.1°C  
+- 💧 Humidity: 53%  
+- 🌬️ Wind Speed: 3.5 m/s  
+- ☁️ Condition: overcast clouds  
+     - 🔙 Back
+
 
 ## 👩‍💻 Author
 
